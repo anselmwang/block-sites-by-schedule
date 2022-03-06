@@ -1,0 +1,5 @@
+{
+    "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+    "pasteImage.path": "${projectRoot}/attachments/",
+    "pasteImage.basePath": "${projectRoot}"
+}
