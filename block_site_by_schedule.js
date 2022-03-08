@@ -75,7 +75,7 @@
 
         _is_blocked_by_any_rule(href, cur_time)
         {
-            const cur_hm = `${pad_num(cur_time.getHours())}:${pad_num(cur_time.getMinutes())}`;
+            const cur_hm = `${pad_num(cur_time.getHours(), 2)}${pad_num(cur_time.getMinutes(), 2)}`;
             for (let [rule_id, rule] of Object.entries(this._rule_dic)) {
                 if (href.match(rule.rule) && cur_hm >= rule.start_time && cur_hm < rule.end_time) {
                     return true;
